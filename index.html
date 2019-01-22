@@ -670,6 +670,8 @@ Error message and password prompt
 
 <li>batch</li>
 
+<li>Batch Delete Export Tiddlers</li>
+
 <li>Batch Edit Tiddler Title</li>
 
 <li>Batch Manupulator</li>
@@ -906,6 +908,8 @@ Error message and password prompt
 
 <li>Example 21: List Tags Based on a Field</li>
 
+<li>Example 30: Colored Timeline</li>
+
 <li>Example Append Operator</li>
 
 <li>Example List Numbers</li>
@@ -1074,6 +1078,8 @@ Error message and password prompt
 
 <li>Kookma</li>
 
+<li>Latest Topics</li>
+
 <li>learning</li>
 
 <li>Learning Resources</li>
@@ -1180,6 +1186,8 @@ Error message and password prompt
 
 <li>Notebox</li>
 
+<li>Notes on Macro</li>
+
 <li>Notes on Using External Web Content v1</li>
 
 <li>Noteself forum</li>
@@ -1211,6 +1219,8 @@ Error message and password prompt
 <li>Private Macro not Available Globally</li>
 
 <li>Public Sidebar</li>
+
+<li>Recent Tab and Bold Timeline</li>
 
 <li>Regexp to Find all Tiddlers with .ext in Their Name</li>
 
@@ -10631,10 +10641,11 @@ Beige:#F5F5DC</pre>
     }
 }</pre>
 </div>
-<div created="20190107164140913" creator="Mohammad" modified="20190119052922109" modifier="Mohammad" title="$:/DefaultTiddlers">
+<div created="20190107164140913" creator="Mohammad" modified="20190122152932836" modifier="Mohammad" title="$:/DefaultTiddlers">
 <pre>[[Search Wiki]]
 [[Search in Tiddlywiki Toolmap]]
 [[Hot Resources]]
+[[Latest Topics]]
 </pre>
 </div>
 <div created="20181214161558647" creator="Mohammad" modified="20181214163217884" modifier="Mohammad" tags="" title="$:/favicon.ico" type="image/x-icon">
@@ -12448,8 +12459,8 @@ exports.hljs = hljs;</pre>
 <div created="20190120192657510" creator="Mohammad" modified="20190120192706293" modifier="Mohammad" title="$:/state/plugin-info-1508127262-$:/plugins/tesseract/staticExporter--1166263343">
 <pre>readme</pre>
 </div>
-<div created="20190107195616916" creator="Mohammad" modified="20190122081925605" modifier="Mohammad" title="$:/state/showeditpreview">
-<pre>no</pre>
+<div created="20190107195616916" creator="Mohammad" modified="20190122154331195" modifier="Mohammad" title="$:/state/showeditpreview">
+<pre>yes</pre>
 </div>
 <div created="20190109082946202" creator="Mohammad" modified="20190122081641013" modifier="Mohammad" title="$:/state/sidebar">
 <pre>yes</pre>
@@ -12475,8 +12486,8 @@ exports.hljs = hljs;</pre>
 <div created="20190117094923754" creator="Mohammad" modified="20190117094923754" modifier="Mohammad" title="$:/state/tab-1202415319">
 <pre>1.1</pre>
 </div>
-<div created="20190107162104558" creator="Mohammad" modified="20190120182147682" modifier="Mohammad" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20190107162104558" creator="Mohammad" modified="20190122152853356" modifier="Mohammad" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20190119035659934" creator="Mohammad" modified="20190119035659934" modifier="Mohammad" title="$:/state/tab-2075363951">
 <pre>$:/core/ui/TiddlerInfo/Tools</pre>
@@ -12526,7 +12537,7 @@ exports.hljs = hljs;</pre>
 <div created="20190109062631691" creator="M" modified="20190109062633163" modifier="Mohamma" title="$:/status/UserName">
 <pre>Mohammad</pre>
 </div>
-<div list="[[Search Wiki]] [[Search in Tiddlywiki Toolmap]] [[Hot Resources]]" title="$:/StoryList">
+<div list="[[Search Wiki]] [[Search in Tiddlywiki Toolmap]] [[Hot Resources]] [[Latest Topics]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div case-insensitive="(?i)" created="20190109080811566" creator="Mohammad" field="" modified="20190122091920524" modifier="Mohammad" title="$:/temp/advancedsearch">
@@ -13273,8 +13284,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190107194522788" modified="20190107194522788" replace="color" title="$:/temp/replace-tag">
 <pre></pre>
 </div>
-<div created="20190107164330165" creator="Mohammad" modified="20190122091348528" modifier="Mohammad" title="$:/temp/search">
-<pre></pre>
+<div created="20190107164330165" creator="Mohammad" modified="20190122143736739" modifier="Mohammad" title="$:/temp/search">
+<pre>example</pre>
 </div>
 <div created="20190117110030021" creator="Mohammad" modified="20190117110047907" modifier="Mohammad" title="$:/temp/searchxx">
 <pre>s</pre>
@@ -14481,7 +14492,7 @@ border-color: red;
 ;Markup
 :http://tobibeer.github.io/tb5/#Markup</pre>
 </div>
-<div caption="Batch operation" created="20190122062457284" creator="Mohammad" modified="20190122091543285" modifier="Mohammad" tags="$:/.mr/toc" title="batch">
+<div caption="Batch operation" created="20190122062457284" creator="Mohammad" modified="20190122133913113" modifier="Mohammad" tags="$:/.mr/toc" title="batch">
 <pre>Batch operation means do p[eration on all tiddlers meet certain criteria.
 
 !! Certain criteria means like below
@@ -14501,7 +14512,35 @@ border-color: red;
 * Change a field in Those Tiddlers
 * Add some text to Those Tiddlers
 
-&lt;&lt;alert primary &quot;Those Tiddlers means: meet certain criteria&quot;&gt;&gt;</pre>
+&lt;&lt;alert primary &quot;Those Tiddlers means: meet certain criteria&quot;&gt;&gt;
+
+See tiddlers tagged with &lt;&lt;tag batch&gt;&gt;</pre>
+</div>
+<div created="20190122133930139" creator="Mohammad" keywords="delete export tiddler batch" modified="20190122135647828" modifier="Mohammad" responder="Thomas Telmiger" tags="batch solution" title="Batch Delete Export Tiddlers" url="https://groups.google.com/d/msg/tiddlywiki/7ED4g1hRevI/0ONuwoftGwAJ">
+<pre>The TW built-in [[Advanced Search|https://tiddlywiki.com/#%24%3A%2FAdvancedSearch]] can do batch operation like batch export and batch delete of tiddlers matching a criteria
+
+!! Exporting tiddlers matching a criteria
+From: [[Tiddlywiki.com|https://tiddlywiki.com/#How%20to%20export%20tiddlers]]
+
+# Open [[Advanced Search|https://tiddlywiki.com/#%24%3A%2FAdvancedSearch]] or click little magnifying glass next to the search area on the sidebar
+# Click on the &quot;Filter&quot; tab of the Advanced Search tiddler. Only the Filter tab will allow you to export a selection of tiddlers. Filters follow a particular syntax. Click on this Filters link to learn about how to make filters.
+# Once you have written a filter, a list of tiddlers matching the filter will appear.
+# Now you can click on the export tiddler button to the right of the filter input field. A pop-up menu will offer you the chance to export tiddlers in multiple formats. Currently, the export formats available are:
+#* CSV file format
+#* JSON file format
+#* Static HTML file
+#* &quot;.tid&quot; file format
+#  Now you can click on the ''export tiddler'' button to the right of the filter input field. A pop-up menu will offer you the chance to export tiddlers in multiple formats.
+
+!! Deleting tiddlers matching a criteria
+
+# Open [[Advanced Search|https://tiddlywiki.com/#%24%3A%2FAdvancedSearch]] or click little magnifying glass next to the search area on the sidebar
+# Click on the &quot;Filter&quot; tab of the Advanced Search tiddler. Only the Filter tab will allow you to export a selection of tiddlers. Filters follow a particular syntax. Click on this Filters link to learn about how to make filters.
+# Once you have written a filter, a list of tiddlers matching the filter will appear.
+#  Now you can click on the ''delet tiddlers'': trash button to the right of the filter input field. A pop-up menu will ask you &quot;Are you sure you wish to delete xx tiddler(s)?&quot; Click ''Delete these tiddlers''.
+
+
+</pre>
 </div>
 <div created="20190109092713824" creator="Mohammad" keywords="rename edit tiddler title" modified="20190109093905651" modifier="Mohammad" responder="Eric Shulman" tags="solution" title="Batch Edit Tiddler Title" url="https://groups.google.com/d/msg/tiddlywiki/oMBoAkJIZhQ/mTlPv3FbEQAJ">
 <pre>; How to edit the title of a group of tiddlers?
@@ -17025,6 +17064,16 @@ src:&quot;&quot;&quot;
 
 </pre>
 </div>
+<div created="20190122143757033" creator="Mohammad" modified="20190122144506722" modifier="Mohammad" tags="$:/tags/Stylesheet exmp30" title="Example 30: Colored Timeline" type="text/css">
+<pre>/*
+This example shows the timeline in Recent Tab in sidebar can be customized using css.
+Here the color of timeline changed to some kind of green!
+*/
+
+.tc-sidebar-lists .tc-timeline {
+   color:#708807;
+}</pre>
+</div>
 <div created="20181220095814770" creator="Mohammad" modified="20190111151016195" modifier="Mohammad" tags="operator append" title="Example Append Operator">
 <pre>&lt;&lt;alert danger &quot;Under construction&quot;&gt;&gt;
 
@@ -18304,6 +18353,11 @@ Ref:https://groups.google.com/d/msg/tiddlywiki/nSwm5nku9QI/0MbWExywBgAJ
 * ''user'': kookma
 &lt;&lt;&lt;</pre>
 </div>
+<div created="20190122152943164" creator="Mohammad" modified="20190122154725953" modifier="Mohammad" title="Latest Topics">
+<pre>Last ten solution added to TW-Scripts
+
+&lt;&lt;list-links &quot;[tag[solution]] +[has[created]sort[created]last[10]]&quot; type:&quot;ol&quot;&gt;&gt;</pre>
+</div>
 <div caption="Learning" created="20180616073408474" creator="Mohammad" modified="20181023154635444" modifier="Mohammad" tags="contents" title="learning">
 <pre>&lt;$list filter=&quot;[!is[system]tag[learning]sort[title]]&quot;&gt;
 &lt;$link to=&lt;&lt;currentTiddler&gt;&gt; tooltip=&quot;Custom tooltip&quot;&gt;&lt;$text text=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/$link&gt;&lt;br&gt;
@@ -19367,6 +19421,11 @@ These tiddlers located in: `TW\02. My Plugins\Tids -license and utility`</pre>
 *''desc'': CSS and macros for extended markup. Creates notebox and colored boxes for tip, info, warning, ...
 &lt;&lt;&lt;</pre>
 </div>
+<div created="20190122093640227" creator="Mohammad" keywords="macro" modified="20190122093942833" modifier="Mohammad" responder="Eric Shulman" tags="solution" title="Notes on Macro" url="https://groups.google.com/d/msg/tiddlywiki/GXK0SYApEmM/U-KU3xb7GgAJ">
+<pre>! Troubleshooting
+
+# The Tiddlywiki core macro parser expects the parenthesis of the macro parameter list to ''//immediately//'' follow the macro name, without any intervening white space.  Having space between macro &quot;name&quot; and the open parentheses of the parameter list, prevents the parser from properly recognizing the macro definition.</pre>
+</div>
 <div created="20190119114344746" creator="Gloom" keywords="external web content" modified="20190120192549242" modifier="Mohammad" responder="barro" tags="solution" title="Notes on Using External Web Content v1" type="application/x-tiddler" url="https://groups.google.com/d/msg/tiddlywiki/A7QDK1yIms4/aEcWOhMCGwAJ">
 <pre>Displaying external Web based content:
 
@@ -19680,6 +19739,28 @@ See [[My Private Macros]]
 </div>
 <div created="20190121050014544" creator="Mohammad" description="The PublicSidebar lets you display different sidebars depending on domain (url)." developer="Mat von TWaddle" modified="20190121070608920" modifier="Mohammad" tags="Links" title="Public Sidebar" url="http://publicsidebar.tiddlyspot.com/" wiki-name="Public sidebar">
 <pre>This is belong to Administration Tools category.</pre>
+</div>
+<div created="20190122143056237" creator="Mohammad" keywords="recent tab format date timeline" modified="20190122143750634" modifier="Mohammad" responder="Thomas Telmiger" tags="exmp30 solution" title="Recent Tab and Bold Timeline" url="https://groups.google.com/d/msg/tiddlywiki/eH4h6xFwInw/65lqZGBtGwAJ">
+<pre>;How can I make it so that in the Recent tab the dates in which the tiddlers are ordered appear highlighted in bold?
+: Use customized style sheet
+
+# Create a new tiddler
+# Tag it with `$:/tags/Stylesheet`
+# &lt;div&gt;
+
+Put the below css inside it
+
+```
+/* Recent tab */
+.tc-sidebar-lists .tc-timeline {
+   font-weight: bold;
+}
+```
+
+&lt;/div&gt;
+# Save and see the result
+
+See [[Example 30: Colored Timeline]]</pre>
 </div>
 <div created="20180715031400001" creator="Mohammad" keywords="rexexp search" modified="20190117110754535" modifier="Mohammad" responder="Mark S" tags="regexp exmp06 solution" title="Regexp to Find all Tiddlers with .ext in Their Name" url="https://groups.google.com/d/msg/tiddlywiki/FVWc3EJ0ykk/ge_oNryQBQAJ">
 <pre>\define myregexp() ^([a-zA-Z0-9]+\.)*[ext]+$
