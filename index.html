@@ -12606,8 +12606,8 @@ exports.convertable = ConvertableWidget;
 <div created="20190107170007669" modified="20190107170007669" title="$:/state/tab-801743119">
 <pre>$:/core/ui/TiddlerInfo/Tools</pre>
 </div>
-<div created="20190107164145503" creator="Mohammad" modified="20190124112510716" modifier="Mohammad" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20190107164145503" creator="Mohammad" modified="20190124125546207" modifier="Mohammad" title="$:/state/tab/sidebar--595412856">
+<pre>Solutions</pre>
 </div>
 <div created="20190109055440906" modified="20190109055440906" title="$:/state/tag-manager/button">
 <pre>open</pre>
@@ -13392,10 +13392,10 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190107162110077" modified="20190107170350137" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>html</pre>
 </div>
-<div created="20190107164330165" creator="Mohammad" modified="20190124112400736" modifier="Mohammad" title="$:/temp/search">
+<div created="20190107164330165" creator="Mohammad" modified="20190124125541768" modifier="Mohammad" title="$:/temp/search">
 <pre></pre>
 </div>
-<div created="20190124111658433" creator="Mohammad" keywords="" modified="20190124115335200" modifier="Mohammad" search-field="title" title="$:/temp/search-tw5">
+<div created="20190124111658433" creator="Mohammad" keywords="" modified="20190124125456014" modifier="Mohammad" search-field="title" search-type="!is[system]" title="$:/temp/search-tw5">
 <pre></pre>
 </div>
 <div created="20190117110030021" creator="Mohammad" modified="20190117110047907" modifier="Mohammad" title="$:/temp/searchxx">
@@ -20406,11 +20406,11 @@ Search in Tiddlywiki Toolmap:
 
 &lt;$macrocall $name=&quot;toolmap&quot; word={{$:/temp/search-toolmap!!keywords}} /&gt;</pre>
 </div>
-<div created="20190124111011095" creator="Mohammad" modified="20190124113408002" modifier="Mohammad" tags="tools" title="Search Tiddlywiki.com">
-<pre>\define tw5(word, criteria:&quot;title&quot;)
+<div created="20190124111011095" creator="Mohammad" modified="20190124125522905" modifier="Mohammad" tags="tools" title="Search Tiddlywiki.com">
+<pre>\define tw5(word:&quot;&quot;, criteria:&quot;title&quot;, type:&quot;&quot;)
 \rules except wikilink
-&lt;$wikify name=&quot;input&quot; text=&quot;https://tiddlywiki.com/#:[!is[system]search:$criteria$[$word$]]&quot;&gt;
-&lt;a href=&lt;&lt;input&gt;&gt; target=&quot;_blank&quot;&gt;$word$&lt;/a&gt;
+&lt;$wikify name=&quot;input&quot; text=&quot;https://tiddlywiki.com/#:[$type$search:$criteria$[$word$]]&quot;&gt;
+&lt;a href=&lt;&lt;input&gt;&gt; target=&quot;_blank&quot;&gt;&lt;$text text=&quot;$word$&quot; /&gt;&lt;/a&gt;
 &lt;/$wikify&gt;
 \end
 
@@ -20418,10 +20418,16 @@ Search in https://www.tiddlywiki.com... &amp;nbsp; &lt;span class=&quot;tc-advan
 &lt;span class=&quot;tc-advanced-search-check&quot;&gt;&lt;$checkbox field=&quot;search-field&quot; tiddler=&quot;$:/temp/search-tw5&quot; checked=&quot;*&quot;&gt; all fields (everything)&lt;/$checkbox&gt;&lt;/span&gt;
 
 
-&lt;$edit-text  tiddler=&quot;$:/temp/search-tw5&quot; field=&quot;keywords&quot; placeholder=&quot;search tiddlywiki.com&quot;/&gt;
+&lt;$edit-text  tiddler=&quot;$:/temp/search-tw5&quot; size=&quot;30&quot; field=&quot;keywords&quot; placeholder=&quot;search tiddlywiki.com&quot;/&gt;
+&amp;nbsp;&lt;span class=&quot;tc-advanced-search-check&quot;&gt;&lt;$checkbox field=&quot;search-type&quot; tiddler=&quot;$:/temp/search-tw5&quot; checked=&quot;!is[system]&quot;&gt; exclude system tiddlers&lt;/$checkbox&gt;&lt;/span&gt;
 
-&lt;$macrocall $name=&quot;tw5&quot; word={{$:/temp/search-tw5!!keywords}} criteria={{$:/temp/search-tw5!!search-field}}/&gt;
-</pre>
+&lt;$list filter=&quot;[{$:/temp/search-tw5!!keywords}] +[minlength[3]]&quot; emptyMessage=&quot;Type at least 3 characters to see results&quot;&gt;
+&lt;$macrocall $name=&quot;tw5&quot; 
+ word={{$:/temp/search-tw5!!keywords}} 
+ criteria={{$:/temp/search-tw5!!search-field}}
+ type={{$:/temp/search-tw5!!search-type}} 
+/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20180901180711126" creator="Mohammad" keywords="search " modified="20190117110449415" modifier="Mohammad" responder="Mark S" tags="search operator solution" title="Search Titles Followed by Text" url="https://groups.google.com/d/msg/tiddlywiki/q_AStBDQCxI/Qpcc9YzsAgAJ">
 <pre>;Is there any way to refine a search in title followed by a search in text body of that tiddler?
