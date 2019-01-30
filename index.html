@@ -560,6 +560,8 @@ Error message and password prompt
 
 <li>$:/temp/search</li>
 
+<li>$:/temp/search-tw-local</li>
+
 <li>$:/temp/search-tw5</li>
 
 <li>$:/temp/search-twscript</li>
@@ -884,6 +886,8 @@ Error message and password prompt
 
 <li>Developer Links</li>
 
+<li>dictionary/mylocal-TWs</li>
+
 <li>Disable Dragability of an Element</li>
 
 <li>Display All Core Images</li>
@@ -910,7 +914,7 @@ Error message and password prompt
 
 <li>EscapeCSS Plugin</li>
 
-<li>Exact Phrase Serach</li>
+<li>Exact Phrase Search</li>
 
 <li>Example 10:</li>
 
@@ -1316,11 +1320,15 @@ Error message and password prompt
 
 <li>Search in Fields</li>
 
+<li>Search in Local Wiki Files</li>
+
 <li>Search in Several Fields</li>
 
 <li>Search in Tags</li>
 
 <li>Search in Tiddlywiki Toolmap</li>
+
+<li>Search Local TWs</li>
 
 <li>Search System or Non-System Tiddlers</li>
 
@@ -10906,7 +10914,7 @@ The wiki-text macros are set of macro for documenting TW codes. Edit this tiddle
 <div created="20180909042646908" creator="Mohammad" modified="20181021074953340" modifier="Mohammad" tags="$:/tags/Stylesheet kookma" title="$:/plugins/.mr/shiraz/stylesheet/wikitext-macro" type="text/css">
 <pre>.doc-example { margin: 1em 0; padding: 0.8em 0; } .doc-example:hover { background-color: #f7f7f9; } .doc-example ul { margin-bottom: 0; padding-bottom: 0; margin-top: 0.2em; } .doc-example pre:first-child { margin-top: 0; } .doc-example-result { border-left: 5px solid #bbb; border-right: 5px solid #bbb; margin-left: 0; margin-right: 0; padding: 0 10px; } .doc-example-result ul { margin-left: 0; padding-left: 10px; } .doc-example-result ol { margin-left: 0; padding-left: 20px; }</pre>
 </div>
-<div created="20181010162537613" creator="Mohammad" description="Toggle field handling in view mode" list-after="$:/core/ui/ViewTemplate/tags" modified="20190129073319823" modifier="Mohammad" tags="kookma" title="$:/plugins/.mr/shiraz/viewtemplate/view-fields">
+<div created="20181010162537613" creator="Mohammad" description="Toggle field handling in view mode" list-after="$:/core/ui/ViewTemplate/tags" modified="20190130023741909" modifier="Mohammad" tags="kookma" title="$:/plugins/.mr/shiraz/viewtemplate/view-fields">
 <pre>\define lingo-base() $:/language/EditTemplate/
 \define config-title()
 $:/config/EditTemplateFields/Visibility/$(currentField)$
@@ -11249,7 +11257,7 @@ $value={{$:/temp/newfieldvalue}}/&gt;
     }
 }</pre>
 </div>
-<div created="20190117104703657" creator="Mohammad" list="Contents [[Worth Reading]] Sandbox [[Search TW-Scripts]] [[List Changes in Current Session]] [[Tips: Advanced Search]] $:/.mr/macro/utility" modified="20190128195523766" modifier="Mohammad" tags="" title="$:/plugins/ajh/favorites/list">
+<div created="20190117104703657" creator="Mohammad" list="Contents [[Worth Reading]] Sandbox [[Search TW-Scripts]] [[List Changes in Current Session]] [[Tips: Advanced Search]] $:/.mr/macro/utility dictionary/mylocal-TWs [[Search Local TWs]]" modified="20190129085304080" modifier="Mohammad" tags="" title="$:/plugins/ajh/favorites/list">
 <pre></pre>
 </div>
 <div author="DanieloRodrigez" bag="default" core-version="&gt;=5.1.1" dependents="" description="adds the ability to encrypt single tiddlers" list="Encrypt-Tiddler Changelog" plugin-type="plugin" revision="0" source="https://github.com/danielo515/TIddlywiki5-EncryptTiddlerPlugin" title="$:/plugins/danielo/encryptTiddler" type="application/json" version="2.1">
@@ -12606,10 +12614,10 @@ exports.convertable = ConvertableWidget;
 <div created="20190120192657510" creator="Mohammad" modified="20190120192706293" modifier="Mohammad" title="$:/state/plugin-info-1508127262-$:/plugins/tesseract/staticExporter--1166263343">
 <pre>readme</pre>
 </div>
-<div created="20190107195616916" creator="Mohammad" modified="20190128050802206" modifier="Mohammad" title="$:/state/showeditpreview">
+<div created="20190107195616916" creator="Mohammad" modified="20190130041635620" modifier="Mohammad" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20190109082946202" creator="Mohammad" modified="20190127081524032" modifier="Mohammad" title="$:/state/sidebar">
+<div created="20190109082946202" creator="Mohammad" modified="20190129094702583" modifier="Mohammad" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20190107161819695" creator="Mohammad" modified="20190124112408459" modifier="Mohammad" title="$:/state/tab--1498284803">
@@ -12654,8 +12662,8 @@ exports.convertable = ConvertableWidget;
 <div created="20190107170007669" modified="20190107170007669" title="$:/state/tab-801743119">
 <pre>$:/core/ui/TiddlerInfo/Tools</pre>
 </div>
-<div created="20190107164145503" creator="Mohammad" modified="20190129065958648" modifier="Mohammad" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20190107164145503" creator="Mohammad" modified="20190129085008551" modifier="Mohammad" title="$:/state/tab/sidebar--595412856">
+<pre>$:/plugins/ajh/favorites/SideBar</pre>
 </div>
 <div created="20190109055440906" modified="20190109055440906" title="$:/state/tag-manager/button">
 <pre>open</pre>
@@ -12696,7 +12704,7 @@ exports.convertable = ConvertableWidget;
 <div created="20190122081020478" creator="Mohammad" modified="20190122081022189" modifier="Mohammad" title="$:/state/toc/solution-100.50-109728876">
 <pre>close</pre>
 </div>
-<div created="20190110054753981" creator="Mohammad" modified="20190129073319824" modifier="Mohammad" title="$:/state/toggle-view-fields">
+<div created="20190110054753981" creator="Mohammad" modified="20190130023741909" modifier="Mohammad" title="$:/state/toggle-view-fields">
 <pre>hide</pre>
 </div>
 <div created="20190109062631691" creator="M" modified="20190109062633163" modifier="Mohamma" title="$:/status/UserName">
@@ -12705,7 +12713,7 @@ exports.convertable = ConvertableWidget;
 <div list="[[Search Wiki]] [[Search in Tiddlywiki Toolmap]] [[Search in  Official Tiddlywiki Site]] [[Hot Resources]] [[Latest Topics]]" title="$:/StoryList">
 <pre></pre>
 </div>
-<div case-insensitive="(?i)" created="20190109080811566" creator="Mohammad" field="" modified="20190129073334926" modifier="Mohammad" title="$:/temp/advancedsearch">
+<div case-insensitive="(?i)" created="20190109080811566" creator="Mohammad" field="" modified="20190130024149100" modifier="Mohammad" title="$:/temp/advancedsearch">
 <pre></pre>
 </div>
 <div created="20190111084206129" creator="Mohammad" modified="20190111085735186" modifier="Mohammad" title="$:/temp/commentName">
@@ -13446,13 +13454,16 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190107162110077" modified="20190107170350137" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>html</pre>
 </div>
-<div created="20190107164330165" creator="Mohammad" modified="20190129072818320" modifier="Mohammad" title="$:/temp/search">
+<div created="20190107164330165" creator="Mohammad" modified="20190130023839157" modifier="Mohammad" title="$:/temp/search">
+<pre></pre>
+</div>
+<div created="20190129090201259" creator="Mohammad" keywords="" modified="20190130023214880" modifier="Mohammad" search-field="*" search-type="!is[system]" title="$:/temp/search-tw-local">
 <pre></pre>
 </div>
 <div created="20190124111658433" creator="Mohammad" keywords="" modified="20190124181818340" modifier="Mohammad" search-field="title" search-type="!is[system]" title="$:/temp/search-tw5">
 <pre></pre>
 </div>
-<div created="20190124182500227" creator="Mohammad" keywords="Eric Shulman" modified="20190124182650756" modifier="Mohammad" search-type="!is[system]" title="$:/temp/search-twscript">
+<div created="20190124182500227" creator="Mohammad" keywords="shiraz" modified="20190129082202360" modifier="Mohammad" search-field="title" search-type="!is[system]" title="$:/temp/search-twscript">
 <pre></pre>
 </div>
 <div created="20190117110030021" creator="Mohammad" modified="20190117110047907" modifier="Mohammad" title="$:/temp/searchxx">
@@ -16741,7 +16752,7 @@ Delete these tiddlers!
 !! See also
 * [[regexp operator|https://tiddlywiki.com/#regexp%20Operator]] for more information.</pre>
 </div>
-<div created="20181204054344056" creator="Mohammad" keywords="delete filed tiddler viewtemplate" modified="20190123050244107" modifier="Mohammad" responder="S.S and Mohammad" tags="field solution" title="Delete Tiddlers Based on a Field" url="https://groups.google.com/d/msg/tiddlywiki/fakT2_B7gEw/B7d_Om6tBwAJ">
+<div created="20181204054344056" creator="Mohammad" keywords="delete filed tiddler viewtemplate" modified="20190129083443686" modifier="Mohammad" responder="S.S. and Mohammad" tags="field solution" title="Delete Tiddlers Based on a Field" url="https://groups.google.com/d/msg/tiddlywiki/fakT2_B7gEw/B7d_Om6tBwAJ">
 <pre>How develop a viewtemplate to show a red delete button on tiddlers have a `due` field?
 
 
@@ -16900,6 +16911,12 @@ src=&quot;&quot;&quot;&gt;&lt;&lt;pdflink label:&quot;Go to page 4&quot; file:&q
 :http://szenio.de/quiz/
 &lt;&lt;&lt;
 </pre>
+</div>
+<div created="20190129084044665" creator="Mohammad" modified="20190129134043643" modifier="Mohammad" tags="exmp28" title="dictionary/mylocal-TWs" type="application/x-tiddler-dictionary">
+<pre>A Pocket Full of Tips: file:///G:/TW/Tobias%20Beer/a%20pocket%20full%20of%20tips-5.1.19.html
+Filters: file:///G:/TW/Tobias%20Beer/Filters-5.1.19.html
+My-Notes: file:///G:/TW/01.%20My-TW-Notes/myNotes.html
+TW 5.1.19: file:///G:/TW/Archive/TW-Full/tiddlywiki-5.1.19.html</pre>
 </div>
 <div created="20190117053859694" creator="Mohammad" keywords="css drag drop" modified="20190117054104216" modifier="Mohammad" responder="Eric Shulman" tags="solution" title="Disable Dragability of an Element" url="https://groups.google.com/d/msg/tiddlywiki/iJjdxEq58tA/IIV8wBpDGgAJ">
 <pre>There *is* a way to disable dragability of an element:
@@ -17082,7 +17099,7 @@ See the plugin here: $:/plugins/danielo/encryptTiddler</pre>
 <div created="20190109113948094" creator="Mohammad" description="It's all about the escapecss[] filter that creates valid css selectors from whatever you give it to eat. It handles titles with any kind of charachters including quotes, slashes, brackets" developer="Simon Huber" modified="20190121172519894" modifier="Mohammad" tags="Links" title="EscapeCSS Plugin" url="https://burningtreec.github.io/TW5-escapecss/" wiki-name="escapecss[]">
 <pre>The approach is used here can be employed to apply custom css dynamically.</pre>
 </div>
-<div created="20180708150613767" creator="Mohammad" keywords="exact search" modified="20190123061904586" modifier="Mohammad" responder="Jed Carty" tags="solution" title="Exact Phrase Serach" url="https://groups.google.com/d/msg/tiddlywiki/PEnAcsPjA8E/3vSovsuABQAJ">
+<div created="20180708150613767" creator="Mohammad" keywords="exact search" modified="20190129104445375" modifier="Mohammad" responder="Jed Carty" tags="solution" title="Exact Phrase Search" url="https://groups.google.com/d/msg/tiddlywiki/PEnAcsPjA8E/3vSovsuABQAJ">
 <pre>Search Term: &lt;$edit-text tiddler='$:/temp/ExactSearch' field='text' tag='input'/&gt;
 
 &lt;$checkbox tiddler='$:/temp/ExactSearch' field='include_system' checked=true unchecked=false&gt; Include System Tiddlers&lt;/$checkbox&gt;
@@ -17481,7 +17498,7 @@ You can import this JSON later into a wiki file.
 !!! See also
 &lt;&lt;list-links &quot;[search:keywords[change]] -[&lt;currentTiddler&gt;]&quot; type:&quot;ol&quot;&gt;&gt;</pre>
 </div>
-<div created="20181126050910359" creator="Mohammad" keywords="image external" modified="20181126051012853" modifier="Mohammad" responder="Mark S" tags="solution" title="External Images and External Thumbnails" url="https://groups.google.com/d/msg/tiddlywiki/6pU_xG0VJec/2bXLAiFB9B0J">
+<div created="20181126050910359" creator="Mohammad" keywords="image external" modified="20190130023344998" modifier="Mohammad" responder="Mark S" tags="task solution" title="External Images and External Thumbnails" url="https://groups.google.com/d/msg/tiddlywiki/6pU_xG0VJec/2bXLAiFB9B0J">
 <pre>&lt;&lt;alert danger text:&quot;To be completed&quot; width:&quot;100&quot;&gt;&gt;</pre>
 </div>
 <div created="20180607182751008" creator="Mohammad" modified="20181116050905315" modifier="Mohammad" tags="developer learning" title="Fake and Inactive Button">
@@ -17644,30 +17661,19 @@ There’s also a bundle of widgets that I consider to be hacked that have hung o
 * `&lt;$encrypt&gt;` for encrypting the payload of standalone HTML TiddlyWikis 
 * `&lt;$raw&gt;` </pre>
 </div>
-<div created="20180618030524807" creator="Mohammad" keywords="float image" modified="20190117110707295" modifier="Mohammad" responder="BTC" tags="solution" title="Float Images" url="https://groups.google.com/d/msg/tiddlywiki/5bZwwj6cyac/2LzFeA7AAwAJ">
-<pre>;Topic
-:float images in tiddlers
-;Date
-:Jun 2018
-;Url
-:https://groups.google.com/d/msg/tiddlywiki/5bZwwj6cyac/pKZAzZy9AwAJ
+<div created="20180618030524807" creator="Mohammad" keywords="float image" modified="20190130023600302" modifier="Mohammad" responder="BTC" tags="task solution" title="Float Images" url="https://groups.google.com/d/msg/tiddlywiki/5bZwwj6cyac/2LzFeA7AAwAJ">
+<pre>What is the best practice for embedding float images in tiddlers to prevent overflow?
 
-;Description
-: What is the best practice for embedding float images in tiddlers to prevent overflow?
-
-;Solution
-:
+!! Solution
 #https://groups.google.com/d/msg/tiddlywiki/5bZwwj6cyac/2LzFeA7AAwAJ
 #https://groups.google.com/d/msg/tiddlywiki/5bZwwj6cyac/bz_GPwsoBAAJ
 
-;Remarks
+!! Remarks
 :The first solution seems to work better, the second does not work on TW 5.1.17 and above. The [[kookma/stylesheet/tw-adjustment]] has implemented the first version to wrap the float image inside the tiddler.
 </pre>
 </div>
-<div created="20150320130409526" creator="Mohammad" modified="20180906060730784" modifier="Mohammad" tags="floating-images" title="Floating Images HowTo">
-<pre>Ref: [[PMario|https://groups.google.com/d/msg/tiddlywiki/oO46RUPm4FI/L6Q-OzMXCAAJ]]
-
-There is a wikitext syntax for images eg: `[img[pig.png]]`. But what if I want to center the image. Or if I want the image left or right aligned and the text should flow around the image. 
+<div created="20150320130409526" creator="Mohammad" keywords="float image center left right" modified="20190130023828446" modifier="Mohammad" responder="PMario" tags="solution floating-images" title="Floating Images HowTo" url="https://groups.google.com/d/msg/tiddlywiki/oO46RUPm4FI/L6Q-OzMXCAAJ">
+<pre>There is a wikitext syntax for images eg: `[img[pig.png]]`. But what if I want to center the image. Or if I want the image left or right aligned and the text should flow around the image. 
 
 There are 3 macros now.
 
@@ -19312,7 +19318,7 @@ Github: https://github.com/kookma
 Email : m[dot]rahmani[at]aut[dot]ac[dot]ir
 &quot;&quot;&quot;</pre>
 </div>
-<div created="20190109081509307" creator="Mohammad" keywords="conditional transclude view empty caption" modified="20190109085943460" modifier="Mohammad" responder="S. S. " tags="conditional solution" title="More on Conditional Output" url="https://groups.google.com/d/msg/tiddlywiki/dzZWAa5Hmlo/EwUqundEEQAJ">
+<div created="20190109081509307" creator="Mohammad" keywords="conditional transclude view empty caption" modified="20190129083452765" modifier="Mohammad" responder="S.S. " tags="conditional solution" title="More on Conditional Output" url="https://groups.google.com/d/msg/tiddlywiki/dzZWAa5Hmlo/EwUqundEEQAJ">
 <pre>When `transclude` or `view` widgets are used for conditional output, an issue raised with empty `caption` field.
 
 Consider below solution [[Eric Shulman|Conditional Output]]
@@ -19821,7 +19827,7 @@ $:/_ChangeNotificationDuration
  * [[Font Awesome]]
  * [[Material Icons]]</pre>
 </div>
-<div created="20190119045518541" creator="Mohammad" keywords="search query lookup online dictionary" modified="20190119051520422" modifier="Mohammad" responder="S. S." tags="exmp28 solution" title="Online Dictionary Lookup" url="https://groups.google.com/d/msg/tiddlywiki/PiUwdVpdyzQ/KVszhSJbCQAJ">
+<div created="20190119045518541" creator="Mohammad" keywords="search query lookup online dictionary" modified="20190129083429630" modifier="Mohammad" responder="S.S." tags="exmp28 solution" title="Online Dictionary Lookup" url="https://groups.google.com/d/msg/tiddlywiki/PiUwdVpdyzQ/KVszhSJbCQAJ">
 <pre>The below solution shows how an Online Dictionary Lookup can be created from inside Tiddlywiki.
 
 !! Create dictionary tiddler
@@ -20648,6 +20654,38 @@ This example shows a filter to search among the tiddlers tagged with `event` hav
 
 ''Note:'' By default the `text` field, i.e. the tiddler body is excluded from search in fields. If you want to search only the `text` field you have to specifically select it.</pre>
 </div>
+<div created="20190130040857378" creator="Mohammad" keywords="search local-wiki" modified="20190130043330303" modifier="Mohammad" responder="Mohammad" tags="solution" title="Search in Local Wiki Files" url="https://groups.google.com/d/msg/tiddlywiki/_1dJ35L4GmQ/0L_cdPG4HQAJ">
+<pre>Assume you have several local wiki files stored in different places in your disks (thumb drive, hard disks, local networks) and you want to search all of them from inside a main wiki (the one you normally work with), how to do this?
+
+To search local file you need these parts
+
+# A dictionary tiddler to store the full path to the local wikis
+# A user interface (UI) tiddler includes
+#* a textbox to get the keyword to search
+#* a set of checkbox to customize search
+#* a set of macro to make the links to local wiki files 
+
+!! Example
+Here an example is given. 
+
+* The dictionary tiddler contains full path to four local wikis: [[dictionary/mylocal-TWs]]
+&lt;$transclude tiddler=&quot;dictionary/mylocal-TWs&quot; /&gt;
+
+* The user interface (UI) to get the keyword, customize search and create the links
+&lt;pre&gt;&lt;$view tiddler=&quot;Search Local TWs&quot;/&gt;&lt;/pre&gt;
+
+&lt;&lt;alert warning &quot;''Note'': This solution only creates links and sends a request to lookup those local wikis. It does not retrieve the search results.&quot;&gt;&gt;
+
+!! See it in action
+
+* Import (by drag and drop) the below tiddlers to your wiki
+*# [[Search Local TWs]]
+*# [[dictionary/mylocal-TWs]]
+* Edit the conetnts of [[dictionary/mylocal-TWs]] to meet  your requirements. Note to the path and name of your local wikis. You can open your local wiki in browser and then copy its full path from browser address bar.
+* Open [[Search Local TWs]] and input a keywords and click on the links created below the textbox.
+* That's all.
+</pre>
+</div>
 <div created="20190124152545321" creator="Mohammad" keywords="" modified="20190124153409858" modifier="Mohammad" tags="search" title="Search in Several Fields">
 <pre>Search can be done in several tiddler fields like caption, title, author, ...
 
@@ -20695,6 +20733,44 @@ Enter a keyword and click on the created link to search the Tiddlywiki toolmap.
 
 {{Search Tiddlywiki Toolmap}}
 </pre>
+</div>
+<div created="20190129081944200" creator="Mohammad" modified="20190130023054848" modifier="Mohammad" tags="tools" title="Search Local TWs">
+<pre>\define search-local-tw-files(data-file, index, word:&quot;&quot;, criteria:&quot;title&quot;, type:&quot;&quot;)
+\rules except wikilink
+&lt;$wikify name=&quot;input&quot; text=&quot;{{$data-file$##$index$}}/#:[$type$search:$criteria$[$word$]]&quot;&gt;
+&lt;a href=&lt;&lt;input&gt;&gt; target=&quot;_blank&quot; &gt;&lt;$text text=&quot;$index$&quot; /&gt;&lt;/a&gt;&lt;br&gt;
+&lt;/$wikify&gt;
+\end
+
+
+\define list-search-local-tws(word:&quot;&quot;, criteria:&quot;&quot;, type:&quot;&quot;, datafile:&quot;dictionary/mylocal-TWs&quot;)
+&lt;small&gt;
+&lt;$list filter=&quot;[[$datafile$]indexes[]]&quot; variable=&quot;index&quot;&gt;
+&lt;$macrocall $name=&quot;search-local-tw-files&quot; 
+ data-file=&quot;$datafile$&quot; 
+ index=&lt;&lt;index&gt;&gt; 
+ word=&lt;&lt;__word__&gt;&gt;
+ criteria=$criteria$
+ type=$type$
+ /&gt;
+&lt;/$list&gt;
+&lt;/small&gt;
+\end
+
+
+Search in local Tiddlywiki files &amp;nbsp; &lt;span class=&quot;tc-advanced-search-check&quot;&gt;&lt;$checkbox field=&quot;search-field&quot; tiddler=&quot;$:/temp/search-tw-local&quot; checked=&quot;title&quot; unchecked=&quot;*&quot; default=&quot;title&quot;&gt; only title&lt;/$checkbox&gt;&lt;/span&gt;
+&lt;span class=&quot;tc-advanced-search-check&quot;&gt;&lt;$checkbox field=&quot;search-field&quot; tiddler=&quot;$:/temp/search-tw-local&quot; checked=&quot;*&quot; unchecked=&quot;title&quot; default=&quot;title&quot;&gt; all fields (everything)&lt;/$checkbox&gt;&lt;/span&gt;
+
+&lt;$edit-text  tiddler=&quot;$:/temp/search-tw-local&quot; size=&quot;30&quot; field=&quot;keywords&quot; placeholder=&quot;search local TWs&quot;/&gt;
+&amp;nbsp;&lt;span class=&quot;tc-advanced-search-check&quot;&gt;&lt;$checkbox field=&quot;search-type&quot; tiddler=&quot;$:/temp/search-tw-local&quot; checked=&quot;!is[system]&quot; unchecked=&quot;all[tiddlers]&quot;&gt; exclude system tiddlers&lt;/$checkbox&gt;&lt;/span&gt;
+
+&lt;$list filter=&quot;[{$:/temp/search-tw-local!!keywords}] +[minlength[3]]&quot; emptyMessage=&quot;Type at least 3 characters to see results&quot;&gt;
+&lt;$macrocall $name=&quot;list-search-local-tws&quot; 
+ word=&quot;&quot;&quot;{{$:/temp/search-tw-local!!keywords}}&quot;&quot;&quot; 
+ criteria={{$:/temp/search-tw-local!!search-field}}
+ type={{$:/temp/search-tw-local!!search-type}} 
+/&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20190124173410311" creator="Mohammad" modified="20190124174423984" modifier="Mohammad" tags="search" title="Search System or Non-System Tiddlers">
 <pre>!! Search non-system tiddlers
@@ -23573,7 +23649,7 @@ https://docs-legacy.requarks.io/wiki
 It claims it is an alternative to TW. Ha some graet CSS to be used.
 </pre>
 </div>
-<div created="20190112181724954" creator="Mohammad" keywords="wikilink rule" modified="20190119035648164" modifier="Mohammad" responder="S. S." tags="solution" title="Wikilink ans Rule" url="https://groups.google.com/d/msg/tiddlywiki/o3GZKui_L4s/pZDtzZryCAAJ">
+<div created="20190112181724954" creator="Mohammad" keywords="wikilink rule" modified="20190129083204325" modifier="Mohammad" responder="S.S." tags="solution" title="Wikilink ans Rule" url="https://groups.google.com/d/msg/tiddlywiki/o3GZKui_L4s/pZDtzZryCAAJ">
 <pre>The below macro creates a links to an external site. When the label is a CamelCase word, TW confuses and instead of pointing to an external link it interpretes the macro output as internal link.
 
 To address this issue, the `\rules except wikilink` is employed.
