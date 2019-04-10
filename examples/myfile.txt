@@ -1,0 +1,3 @@
+function dy=f2(x, y)
+ dy=cos(x)+sin(x);
+ 
