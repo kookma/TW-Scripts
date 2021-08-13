@@ -3114,8 +3114,8 @@ storeTitle=&lt;&lt;qualify "$:/temp/storeTitle"&gt;&gt;
 <div created="20210425045246707" modified="20210426052421840" title="$:/state/search/currentTab">
 <pre>$:/core/ui/DefaultSearchResultList</pre>
 </div>
-<div created="20210425045552298" modified="20210426054743239" title="$:/state/showeditpreview">
-<pre>yes</pre>
+<div created="20210425045552298" modified="20210813055755581" title="$:/state/showeditpreview">
+<pre>no</pre>
 </div>
 <div created="20210425045940776" modified="20210426041248938" title="$:/state/sidebar">
 <pre>yes</pre>
@@ -3123,7 +3123,7 @@ storeTitle=&lt;&lt;qualify "$:/temp/storeTitle"&gt;&gt;
 <div created="20210426040131298" modified="20210426043713719" title="$:/state/tab--1498284803">
 <pre>$:/plugins/kookma/solution/ui/search-in-fields</pre>
 </div>
-<div created="20210426040657395" modified="20210426053638207" title="$:/state/tab--1913893819">
+<div created="20210426040657395" modified="20210813053814072" title="$:/state/tab--1913893819">
 <pre>Keywords Statistics</pre>
 </div>
 <div created="20210426040625714" modified="20210426040932794" title="$:/state/tab--2041627287">
@@ -3144,13 +3144,13 @@ storeTitle=&lt;&lt;qualify "$:/temp/storeTitle"&gt;&gt;
 <div created="20210425045246707" modified="20210426052421840" title="$:/state/tab/search-results/sidebar">
 <pre>$:/core/ui/DefaultSearchResultList</pre>
 </div>
-<div created="20210424180637237" modified="20210426054430158" title="$:/state/tab/sidebar--595412856">
-<pre>$:/plugins/kookma/favorites/sidebar-tab</pre>
+<div created="20210424180637237" modified="20210813053144313" title="$:/state/tab/sidebar--595412856">
+<pre>Explorer</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210426054435462" list="[[Hot Resources]] [[Latest Topics]] History Tasks" modified="20210426054435462" title="$:/StoryList">
+<div list="[[Search Wiki]] [[Search in Tiddlywiki Toolmap]] [[Search in  Official Tiddlywiki Site]] [[Hot Resources]] [[Latest Topics]] History Tasks" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210307120304156" list="$:/core/ui/AdvancedSearch/Standard $:/plugins/HackSearch/tab $:/core/ui/AdvancedSearch/System $:/core/ui/AdvancedSearch/Shadows $:/plugins/kookma/solution/ui/search-in-fields $:/core/ui/AdvancedSearch/Filter" modified="20210307120304156" title="$:/tags/AdvancedSearch">
@@ -13432,7 +13432,7 @@ This is a [[Quine|https://en.wikipedia.org/wiki/Quine_(computing)]]
 
 &lt;&lt;alert danger "The keyboard shortcuts are now part of Tiddlywiki 5.1.19"&gt;&gt;</pre>
 </div>
-<div caption="Keywords" created="20210426041835005" modified="20210426053413801" tags="Explorer Statistics" title="Keywords Statistics">
+<div caption="Keywords" created="20210426041835005" modified="20210813055805446" tags="Explorer Statistics" title="Keywords Statistics">
 <pre>\define listAllKeywords()
 &lt;$list filter="[each[keywords]get[keywords]]"&gt;
 &lt;$text text=&lt;&lt;currentTiddler&gt;&gt;/&gt;
@@ -13446,7 +13446,7 @@ Search in keywords &lt;$edit-text tiddler="$:/temp/keyword-stats" tag=input defa
 
 &lt;small&gt;All keywords: &lt;$count filter="[enlist&lt;allkeys&gt;]"/&gt;&lt;/small&gt;
 
-&lt;$list filter="[enlist&lt;allkeys&gt;search{$:/temp/keyword-stats}]"&gt;
+&lt;$list filter="[enlist&lt;allkeys&gt;sort[]search{$:/temp/keyword-stats}]"&gt;
 &lt;b&gt;&lt;$text text=&lt;&lt;currentTiddler&gt;&gt; /&gt;&lt;/b&gt;
 &lt;ol&gt;
 &lt;$list filter="[contains:keywords&lt;currentTiddler&gt;]"&gt;
