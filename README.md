@@ -2,7 +2,7 @@
 A collection of Tiddlywiki scripts. Question and answers (Q&amp;A) collected from TW forum
 
 # Tutorial
-For effecient use, see the tutorial folder and first study the TW-Scripts.PDF
+For effecient use, see the tutorial folder and first study the [TW-Scripts.PDF](https://github.com/kookma/TW-Scripts/blob/master/tutorial/TW-Scripts.pdf)
 
 # Page and Code
 
