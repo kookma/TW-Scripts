@@ -1,5 +1,5 @@
 # TW-Scripts
-A collection of Tiddlywiki scripts, tips and tricks. Also many question and answers (Q&amp;A) from TW forum
+A collection of Tiddlywiki scripts, tips and tricks. Also many question and answers (Q&amp;A) from Tiddlywiki forums.
 
 # Tutorial
 For effecient use, see the tutorial folder and first study the [TW-Scripts.PDF](https://github.com/kookma/TW-Scripts/blob/master/tutorial/TW-Scripts.pdf)
